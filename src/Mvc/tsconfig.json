@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "lib": ["es5", "DOM", "ScriptHost", "ES2015.Promise"],
+    "target": "es5",
+    "module": "CommonJS",
+    "outDir": "wwwroot/js"
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}

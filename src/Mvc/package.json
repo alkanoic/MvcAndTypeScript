@@ -1,0 +1,19 @@
+{
+  "name": "webapplication2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "webpack -d"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^8.0.1",
+    "typescript": "^3.9.7",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}

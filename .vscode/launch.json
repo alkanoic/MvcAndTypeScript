@@ -1,0 +1,39 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Mvc",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/Mvc/bin/Debug/netcoreapp3.1/Mvc.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/Mvc",
+            "stopAtEntry": false,
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/src/Mvc/Views"
+            }
+        },
+        {
+            "name": "chrome",
+            "type": "chrome",
+            "request": "launch",
+            "breakOnLoad": true,
+            "sourceMaps": true,
+            "url": "https://localhost:5001",
+            "webRoot": "${workspaceFolder}/src/Mvc/",
+        },
+    ],
+    "compounds": [
+        {
+            "name": "Mvc/chrome",
+            "configurations": ["Mvc", "chrome"]
+        }
+    ]
+}
